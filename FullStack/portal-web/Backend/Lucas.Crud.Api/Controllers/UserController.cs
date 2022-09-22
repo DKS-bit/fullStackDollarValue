@@ -53,7 +53,7 @@ namespace Lucas.Crud.Api.Controllers
         [HttpPost("rotaDePost")] public async Task<string> Post([FromBody] User user)
         {
             return await _mongoDBService.CreateAsync(user);
-
+            
         }
         [HttpPost("rotaDePostUserClient")]
         [DisableRequestSizeLimit]
@@ -61,12 +61,12 @@ namespace Lucas.Crud.Api.Controllers
         {
             if(await _mongoDBService.canRegister(postUseRequest.bearer))
             {
-            postUseRequest.user.registeredBy = await _mongoDBService.ReadJWT(postUseRequest.bearer);
-            postUseRequest.user.timeRegistered = DateTime.Now;
-            await _mongoDBService.CreateAsyncUserClient(postUseRequest.user);
-            var Id =await _mongoDBService.findNewUserId(postUseRequest.user);
-            await _mongoDBService.CreateUserImage(postUseRequest.base64, Id);
-            return CreatedAtAction(nameof(Get), new { id = postUseRequest.user.Id });
+                postUseRequest.user.registeredBy = await _mongoDBService.ReadJWT(postUseRequest.bearer);
+                postUseRequest.user.timeRegistered = DateTime.Now;
+                await _mongoDBService.CreateAsyncUserClient(postUseRequest.user);
+                var Id =await _mongoDBService.findNewUserId(postUseRequest.user);
+                await _mongoDBService.CreateUserImage(postUseRequest.base64, Id);
+                return CreatedAtAction(nameof(Get), new { id = postUseRequest.user.Id });
             }
             return null;
         }
@@ -80,7 +80,6 @@ namespace Lucas.Crud.Api.Controllers
             }
             var id = await _mongoDBService.ReadJWT(bearer);
 
-            
             return await _mongoDBService.GetAsyncUserClient(id);
         }
         [EnableCors]
