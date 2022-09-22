@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">A webpage built for checking users and dollar to real exchange rate React and .Net.</h4>
+<h4 align="center">A webpage built for checking users and dollar to real exchange rate using React and .Net.</h4>
 
 
 <p align="center">
