@@ -26,6 +26,7 @@ function Header(props: pageType) {
                         <Nav.Link href="/table" >Log</Nav.Link>
                         <Nav.Link href="/register" >Register</Nav.Link>
                         <Nav.Link href="/clients">Clients</Nav.Link>
+                        <Nav.Link href="/dollar">Dollar</Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link onClick={(e) => logout()}>Logout</Nav.Link>

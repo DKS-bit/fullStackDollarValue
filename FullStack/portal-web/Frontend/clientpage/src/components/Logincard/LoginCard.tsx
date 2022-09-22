@@ -45,7 +45,7 @@ export const Login = () => {
                 }
                 else {
                     localStorage.setItem("jwt", res.data)
-                    navigate('/clients');
+                    navigate('/dollar');
                 }
             }).catch((err: any) => {
                 console.log(err)
@@ -122,7 +122,7 @@ export const Login = () => {
                             Password
                             <Input type="password" onChange={(e) => setPassword(e.target.value)} value={password} ></Input>
                         </Label>
-                        <Button onClick={(e) => tryLogin()}>Entrar</Button>
+                        <Button onClick={(e) => tryLogin()}>Login</Button>
                         <SwithBtn onClick={(e: any) => handleDisplay()}>No account? Make one!!</SwithBtn>
                     </LeftLogin>
                     <RightLogin style={{ display: !isLogin ? 'flex' : 'none' }}>

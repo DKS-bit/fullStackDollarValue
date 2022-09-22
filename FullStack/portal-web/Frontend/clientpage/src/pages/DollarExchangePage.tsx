@@ -84,7 +84,7 @@ export const DollarExchangePage = () => {
         <Container>
             <h1>{min}</h1>
             <h1>{max}</h1>
-            <Header location='/clients'></Header>
+            <Header location='/dollar'></Header>
             <CardComponentContainer>
                 <CardComponent value={average} information='Daily average'></CardComponent>
                 <CardComponent value={min} information='Daily min'></CardComponent>
