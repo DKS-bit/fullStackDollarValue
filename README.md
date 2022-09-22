@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">A webpage built for checking users and dollar to real exchange rate <a href="http://electron.atom.io" target="_blank">React and .Net</a>.</h4>
+<h4 align="center">A webpage built for checking users and dollar to real exchange rate React and .Net.</h4>
 
 
 <p align="center">
