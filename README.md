@@ -1,7 +1,7 @@
 # DesafioFullstackMost
 <h1 align="center">
   <br>
- <img src="https://i.imgur.com/ZZJb8Zp.png" alt="Markdownify" width="200">
+ <img src="https://i.imgur.com/ZZJb8Zp.png" alt="Qash" width="200">
   <br>
   Qash
   <br>
