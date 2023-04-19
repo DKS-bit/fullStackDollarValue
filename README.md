@@ -22,7 +22,7 @@
 * Dollar to real worker service - Every one minute a worker service runs to insert into mongodb the exchange rate
 * Working login and register page- as a client you can register and log in to see what you need
 * Creating users - Insert your users into a database using a liveness test and use their documents to autofill information!
-* View your users- View the only users you registered into the database
+* View your users- View only the users you registered into the database
 * User access- Users can access the dollar page to see information about the exchange rate on the current day and past days
 * Tables with search- Every table has a search function to help you find what you need!
 * A neat user modal- A neat modal that has all the basic information about a user you registered and their picture!
